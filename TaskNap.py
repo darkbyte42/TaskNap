@@ -359,9 +359,9 @@ class SchedulerApp(QMainWindow):
         self.inactivity_timer.timeout.connect(self.check_inactivity)
         self.inactivity_timer.start(30 * 1000)
 
-        self.setWindowTitle("System Scheduler")
+        self.setWindowTitle("TaskNap a System Scheduler")
         script_dir = os.path.dirname(os.path.abspath(__file__))
-        icon_path = os.path.join(script_dir, "icon.ico")
+        icon_path = os.path.join(script_dir, "tasknap.ico")
         self.setWindowIcon(QIcon(icon_path))
 
         central_widget = QWidget()
@@ -469,7 +469,7 @@ class SchedulerApp(QMainWindow):
         """
         self.tray_icon = QSystemTrayIcon(self)
         script_dir = os.path.dirname(os.path.abspath(__file__))
-        icon_path = os.path.join(script_dir, "icon.ico")
+        icon_path = os.path.join(script_dir, "tasknap.ico")
         self.tray_icon.setIcon(QIcon(icon_path))
 
         tray_menu = QMenu()
