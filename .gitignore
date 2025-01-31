@@ -1,0 +1,11 @@
+# Ignore all .exe files
+*.exe
+# Ignore compiled Python files
+__pycache__/
+*.py[cod]
+# Ignore virtual environments named 'venv' or 'env'
+venv/
+env/
+# Ignore build & dist directories often produced by PyInstaller or setuptools
+build/
+dist/
